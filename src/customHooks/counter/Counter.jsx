@@ -10,8 +10,9 @@ export default function Counter() {
 
   return (
     <>
+      <h4>custom counter hook</h4>
       <label>
-        Tick duration: ${delay} ms
+        Tick duration: {delay} ms
         <br />
         <input
           type="range"

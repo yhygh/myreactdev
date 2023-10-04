@@ -9,6 +9,7 @@ export default function Accordion() {
   return (
     <>
       <h3>Almaty, Kazakhstan</h3>
+      <h4>Note: use composite (composition) pattern</h4>
       <div>
         <Panel
           title="About"

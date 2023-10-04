@@ -8,6 +8,10 @@ export default function LearnModal() {
 
   return (
     <>
+      <h4>
+        In this example, the external system: browser DOM, a <code>dialog</code>{" "}
+        modal: useEffect, useRef, composition pattern
+      </h4>
       <button onClick={() => setIsOpen(true)}>Open dialog</button>
       <LearnDialog isOpen={isOpen}>
         <div>Hello there!</div>
@@ -33,3 +37,26 @@ function LearnDialog({ isOpen, children }) {
 
   return <dialog ref={ref}>{children}</dialog>;
 }
+
+// // Below works too, written by Haiyan
+// export default function LearnModal() {
+//   const ref = useRef(null);
+
+//   function handleOpen() {
+//     ref.current.showModal();
+//   }
+
+//   function handleClose() {
+//     ref.current.close();
+//   }
+
+//   return (
+//     <>
+//       <button onClick={handleOpen}>Open dialog</button>
+//       <dialog ref={ref}>
+//         Hello there!
+//         <button onClick={handleClose}>Close dialog</button>
+//       </dialog>
+//     </>
+//   );
+// }

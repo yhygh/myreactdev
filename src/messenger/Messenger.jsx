@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// https://codesandbox.io/s/m3l63x?file=/App.js&utm_medium=sandpack
+// https://codesandbox.io/s/rj9zny?file=/App.js&utm_medium=sandpack
 // https://react.dev/learn/managing-state
 export default function Messenger() {
   const [activeUserIndex, setActiveUserIndex] = useState(0);

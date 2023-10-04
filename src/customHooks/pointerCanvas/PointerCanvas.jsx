@@ -26,6 +26,7 @@ export default function PointerCanvas() {
   const pos5 = useDelayedValue(pos3, 50);
   return (
     <>
+      <h4>Delayed pointermove events, custom hook, no clearTimeout example</h4>
       <Dot position={pos1} opacity={1} />
       <Dot position={pos2} opacity={0.8} />
       <Dot position={pos3} opacity={0.6} />

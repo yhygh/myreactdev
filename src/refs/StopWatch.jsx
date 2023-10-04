@@ -25,6 +25,10 @@ export default function StopWatch() {
 
   return (
     <>
+      <h4>
+        clearTimeout can be achieved using useState (redundant rendering), but
+        it's more efficient using useRef
+      </h4>
       <h3>Time passed: {timepassed.toFixed(3)}</h3>
       <button onClick={handleStart}>Start</button>
       <button onClick={handleStop}>Stop</button>

@@ -11,8 +11,11 @@ import { PageWrapper, NavWrapper, NavItem, OutletWrapper } from "./MainStyled";
 import Home from "./Home";
 import EffectChallenges from "./learnEffect/effectChallenge/EffectChallenges";
 import InputStateQuiz from "./inputState/InputStateQuiz";
+import InputStateQuiz1 from "./inputState/InputStateQuiz1";
 import Accordion from "./accordion/Accordion";
+import Accordion1 from "./accordion/Accordion1";
 import Messenger from "./messenger/Messenger";
+import Messenger1 from "./messenger/Messenger1";
 import TaskApp from "./taskApp/TaskApp";
 import TaskApp2 from "./taskApp2/TaskApp2";
 import Page from "./page/Page";
@@ -27,6 +30,7 @@ import Counter from "./customHooks/counter/Counter";
 import PointerCanvas from "./customHooks/pointerCanvas/PointerCanvas";
 import StopWatch from "./refs/StopWatch";
 import BrokenChatInput from "./refs/BrokenChatInput";
+import BrokenChatInput1 from "./refs/BrokenChatInput1";
 import FixDebouncing from "./refs/FixDebouncing";
 import LatestState from "./refs/LatestState";
 import CatFriends from "./refs/CatFriends";
@@ -41,6 +45,8 @@ import ChainSelectReactDev from "./learnEffect/chainSelect/ChainSelectReactDev";
 import Playground from "./learnEffect/Playground";
 import ConditionalFocus from "./learnEffect/ConditionalFocus";
 import ContactList from "./learnEffect/editContact/ContactList";
+import Optimize from "./fullstackcafe/Optimize";
+import MyIntersectionObserver from "./learnEffect/intersectionObserver/intersection";
 
 // https://medium.com/age-of-awareness/amazing-new-stuff-in-react-router-v6-895ba3fab6af
 
@@ -144,6 +150,12 @@ const Root = () => {
         <NavItem>
           <Link to="/conditionalfocus">Conditional Focus</Link>
         </NavItem>
+        <NavItem>
+          <Link to="/optimize">Optimize From Full Stack Cafe</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/intersectionobserver">Learn Intersection Observer</Link>
+        </NavItem>
       </NavWrapper>
       <OutletWrapper>
         <Outlet />
@@ -160,7 +172,7 @@ export const router = createBrowserRouter(
       <Route path="/effect" element={<EffectChallenges />} />
       <Route path="/inputstatequiz" element={<InputStateQuiz />} />
       <Route path="/accordion" element={<Accordion />} />
-      <Route path="/messenger" element={<Messenger />} />
+      <Route path="/messenger" element={<Messenger1 />} />
       <Route path="/taskapp" element={<TaskApp />} />
       <Route path="/taskapp2" element={<TaskApp2 />} />
       <Route path="/page" element={<Page />} />
@@ -173,7 +185,7 @@ export const router = createBrowserRouter(
       <Route path="/chatroom" element={<ChatRoomMain />} />
       <Route path="/counter" element={<Counter />} />
       <Route path="/stopwatch" element={<StopWatch />} />
-      <Route path="/brokenchat" element={<BrokenChatInput />} />
+      <Route path="/brokenchat" element={<BrokenChatInput1 />} />
       <Route path="/fixdebouncing" element={<FixDebouncing />} />
       <Route path="/lateststate" element={<LatestState />} />
       <Route path="/catfriends" element={<CatFriends />} />
@@ -187,6 +199,11 @@ export const router = createBrowserRouter(
       <Route path="/chainselectreactdev" element={<ChainSelectReactDev />} />
       <Route path="/playground" element={<Playground />} />
       <Route path="/conditionalfocus" element={<ConditionalFocus />} />
+      <Route path="/optimize" element={<Optimize />} />
+      <Route
+        path="/intersectionobserver"
+        element={<MyIntersectionObserver />}
+      />
     </Route>
   )
 );
